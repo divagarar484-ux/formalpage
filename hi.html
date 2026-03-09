@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HI</title>
+  <style>
+    .row {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    img {
+      height: 250px;
+      border-radius: 40px;
+    }
+
+    button {
+      width: 170px;
+      color: cornflowerblue;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid cadetblue;
+      background: white;
+      cursor: pointer;
+    }
+
+    header, footer {
+      background-color: black;
+      color: beige;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Welcome to our app</h1></header>
+
+  <!-- First row -->
+  <div class="row">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/25/ea/93/25ea93212fa964b90112624b493b4eaa.jpg" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ff/46/d7/ff46d73e5c9fb9810c970f0a8ffb1713.jpg" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+    <div class="card">
+      <img src="https://miro.medium.com/v2/resize:fit:505/1*zDw4s2_luGksNJlJQ2mm5Q.png" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row">
+    <div class="card">
+      <img src="https://pratapsonsglobal.com/cdn/shop/files/PIX_2736copy.jpg?v=1734683322&width=1400" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.LePNjyDh0-3nNYmniKBRSAHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+    <div class="card">
+      <img src="https://www.deerpearlflowers.com/wp-content/uploads/2022/12/emerald-green-mermaid-wedding-dress.jpg" alt="image">
+      <button onclick="fun(this)">Click</button>
+    </div>
+  </div>
+
+  <footer>123 Evergreen Lane, Maplewood Heights, Springfield, USA – 5432</footer>
+
+  <script>
+    function fun(btn) {
+      btn.textContent = "Completed";
+    }
+  </script>
+</body>
+</html>
